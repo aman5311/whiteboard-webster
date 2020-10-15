@@ -1,0 +1,60 @@
+.login-background {
+    /* The image used */
+    background-image: url('/assets/login-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .login_card{
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: white !important;
+    float: right;
+    margin-right: 35px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    height: 90%;
+    padding: 30px;
+    border-radius: 0;
+}
+
+.label{
+    margin-top : 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+img{
+    width: 150px;
+    margin-left: 80px;
+}
+.input_group_iot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width{
+    min-width: 100%;
+}
+
+.checkbox-password {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom : 20px;
+}
+
+.center-align{
+    text-align: center;
+    display: block;
+}

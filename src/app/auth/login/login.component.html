@@ -1,0 +1,39 @@
+<div class="login-background">
+    <div class="card login_card mat-elevation-z8">
+        <div>
+            <img src="/assets/logo.jpg" alt="">
+        </div>
+        <div class="label">
+            <label>Login to continue</label>
+        </div>
+        <form [formGroup]="loginForm">
+            <div class="input_group_iot margin_top ">
+                <mat-form-field appearance="outline" class="input_width margin_right  full-width">
+                    <mat-label>User Id</mat-label>
+                    <input matInput formControlName="userId" placeholder="john@example.com" required />
+                    <mat-error *ngIf="loginControl.userId.hasError('required')">Please Enter User Id</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="input_group_iot margin_top ">
+                <mat-form-field appearance="outline" class="input_width margin_right  full-width">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" type="password" required />
+                    <mat-error *ngIf="loginControl.password.hasError('required')">Please Enter Password</mat-error>
+                </mat-form-field>
+            </div>
+            <!-- <div class="checkbox-password">
+                <div class="remember-me">
+                   <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+                </div>
+                <div>
+                   <a routerLink="/forget-password" routerLinkActive="active"> Forgot Password? </a>
+               </div>
+            </div> -->
+            <div >
+                <button mat-raised-button color="primary" class="input_group_iot  full-width center-align" (click)="login()">LOGIN</button>
+            </div>
+        </form>
+        <p class="text-center">Dont't have an account? <a routerLink="../signup">Signup</a> </p>                                                                 
+
+    </div>
+</div>
